@@ -11303,6 +11303,10 @@ article {
   font-size: 18px;
 }
 
+h2, .h2 {
+  text-align: center;
+}
+
 #homebanner {
   position: relative;
   width: 100%;
