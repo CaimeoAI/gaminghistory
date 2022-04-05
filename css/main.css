@@ -1,6 +1,8 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url("https://i.guim.co.uk/img/media/8f27bb8fc3226ccaa60899b9f89b31eafd3e533e/0_116_2480_1488/master/2480.jpg?width=1900&quality=85&auto=format&fit=max&s=ce83ee7d0f87fa0f7019cc155ef0c7d9");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 #homebanner {
   position: relative;
   width: 100%;
@@ -63,11 +65,11 @@
   width: 100%;
   height: 35vh;
   background-size: cover;
-  background: url("https://steemitimages.com/0x0/https://steemitimages.com/DQmePASMeDYsVrrCrEhvRoaLHMmKF4uMYcnNXjDY9c453ya/Capture3.PNG") no-repeat center;
+  background: url("https://images.pond5.com/pong-game-animation-background-090361718_prevstill.jpeg") no-repeat top;
 }
 #earlyyearsbanner h2, #earlyyearsbanner .h2 {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -75,8 +77,81 @@
   text-shadow: 1px 1px 0px black;
 }
 
-#earlyyears p {
+#earlyyears, #earlyyearsbanner {
   font-family: "Press Start 2P", cursive;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+#arcadebanner {
+  position: relative;
+  width: 100%;
+  height: 35vh;
+  background-size: cover;
+  background: url("https://wallpaperaccess.com/full/1094280.jpg") no-repeat center;
+}
+#arcadebanner h2, #arcadebanner .h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 0px black;
+  font-size: 45px;
+}
+
+#arcade, #arcadebanner {
+  font-family: "VT323", monospace;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+#rootsbanner {
+  position: relative;
+  width: 100%;
+  height: 35vh;
+  background-size: cover;
+  background: url("https://phaser.io/content/tutorials/retro-highscore-table/highscore.jpg") no-repeat center;
+}
+#rootsbanner h2, #rootsbanner .h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 0px black;
+  font-size: 45px;
+}
+
+#roots, #rootsbanner {
+  font-family: "VT323", monospace;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+#homebanner {
+  position: relative;
+  width: 100%;
+  height: 35vh;
+  background-size: cover;
+  background: url("https://i.guim.co.uk/img/media/8f27bb8fc3226ccaa60899b9f89b31eafd3e533e/0_116_2480_1488/master/2480.jpg?width=1900&quality=85&auto=format&fit=max&s=ce83ee7d0f87fa0f7019cc155ef0c7d9") no-repeat center;
+}
+#homebanner h2, #homebanner .h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 0px black;
+  font-size: 30px;
+}
+
+#home, #homebanner {
+  font-family: "Orbitron", sans-serif;
+  font-size: 20px;
 }
 
 /*!
@@ -11379,8 +11454,8 @@ nav {
 }
 
 article {
-  margin: 10px 0;
-  padding: 2rem;
+  margin: 15px 0;
+  padding: 3rem;
   font-size: 18px;
 }
 
