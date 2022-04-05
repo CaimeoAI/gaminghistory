@@ -1,4 +1,84 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+#homebanner {
+  position: relative;
+  width: 100%;
+  height: 35vh;
+  background: url("https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80") no-repeat center;
+  background-size: cover;
+}
+#homebanner h1, #homebanner .h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 0px black;
+}
+
+#introdiv {
+  width: 100%;
+  height: 25vh;
+}
+#introdiv div:first-child {
+  background: url("https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80") no-repeat center;
+  background-size: cover;
+  height: 100%;
+  width: 48%;
+  margin-left: 0;
+  float: left;
+  border-radius: 0px 20px 20px 0px;
+}
+#introdiv div:last-child {
+  background: url("https://images.unsplash.com/photo-1533237264985-ee62f6d342bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80") no-repeat center;
+  background-size: cover;
+  height: 100%;
+  width: 48%;
+  margin-right: 0;
+  float: right;
+  border-radius: 20px 0px 0px 20px;
+}
+
+#historybanner {
+  position: relative;
+  width: 100%;
+  height: 35vh;
+  background-size: cover;
+  background: url("https://i.pinimg.com/736x/ef/66/59/ef6659c4357e05999ff12814227b6ddd--pac-man-emmental.jpg") no-repeat center;
+}
+#historybanner h1, #historybanner .h1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 0px black;
+}
+
+#earlyyearsbanner {
+  position: relative;
+  width: 100%;
+  height: 35vh;
+  background-size: cover;
+  background: url("https://steemitimages.com/0x0/https://steemitimages.com/DQmePASMeDYsVrrCrEhvRoaLHMmKF4uMYcnNXjDY9c453ya/Capture3.PNG") no-repeat center;
+}
+#earlyyearsbanner h2, #earlyyearsbanner .h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 0px black;
+}
+
+#earlyyears p {
+  font-family: "Press Start 2P", cursive;
+}
+
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11299,50 +11379,11 @@ nav {
 }
 
 article {
+  margin: 10px 0;
   padding: 2rem;
   font-size: 18px;
 }
 
 h2, .h2 {
   text-align: center;
-}
-
-#homebanner {
-  position: relative;
-  width: 100%;
-  height: 35vh;
-  background: url("https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80") no-repeat center;
-  background-size: cover;
-}
-#homebanner h1, #homebanner .h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  text-shadow: 1px 1px 0px black;
-}
-
-#introdiv {
-  width: 100%;
-  height: 25vh;
-}
-#introdiv div:first-child {
-  background: url("https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80") no-repeat center;
-  background-size: cover;
-  height: 100%;
-  width: 48%;
-  margin-left: 0;
-  float: left;
-  border-radius: 0px 20px 20px 0px;
-}
-#introdiv div:last-child {
-  background: url("https://images.unsplash.com/photo-1533237264985-ee62f6d342bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80") no-repeat center;
-  background-size: cover;
-  height: 100%;
-  width: 48%;
-  margin-right: 0;
-  float: right;
-  border-radius: 20px 0px 0px 20px;
 }
