@@ -57,7 +57,6 @@
   width: 100%;
   height: 35vh;
   background-size: cover;
-  background-size: 100%;
   transition: all 2s ease-in;
   background: url("https://i.pinimg.com/736x/ef/66/59/ef6659c4357e05999ff12814227b6ddd--pac-man-emmental.jpg") no-repeat center;
 }
@@ -76,7 +75,6 @@
   width: 100%;
   height: 35vh;
   background-size: cover;
-  background-size: 100%;
   transition: all 2s ease-in;
   background: url("https://images.pond5.com/pong-game-animation-background-090361718_prevstill.jpeg") no-repeat top;
 }
@@ -101,7 +99,6 @@
   width: 100%;
   height: 35vh;
   background-size: cover;
-  background-size: 100%;
   transition: all 2s ease-in;
   background: url("https://wallpaperaccess.com/full/1094280.jpg") no-repeat center;
 }
@@ -127,7 +124,6 @@
   width: 100%;
   height: 35vh;
   background-size: cover;
-  background-size: 100%;
   transition: all 2s ease-in;
   background: url("https://phaser.io/content/tutorials/retro-highscore-table/highscore.jpg") no-repeat center;
 }
@@ -153,7 +149,6 @@
   width: 100%;
   height: 35vh;
   background-size: cover;
-  background-size: 100%;
   transition: all 2s ease-in;
   background: url("https://i.guim.co.uk/img/media/8f27bb8fc3226ccaa60899b9f89b31eafd3e533e/0_116_2480_1488/master/2480.jpg?width=1900&quality=85&auto=format&fit=max&s=ce83ee7d0f87fa0f7019cc155ef0c7d9") no-repeat center;
 }
@@ -178,7 +173,6 @@
   width: 100%;
   height: 35vh;
   background-size: cover;
-  background-size: 100%;
   transition: all 2s ease-in;
   background: url("https://wallpapercave.com/wp/wp10038149.png") no-repeat center;
 }
@@ -202,7 +196,6 @@
   width: 100%;
   height: 35vh;
   background-size: cover;
-  background-size: 100%;
   transition: all 2s ease-in;
   background: url("https://cdna.artstation.com/p/assets/images/images/014/336/978/large/julia-feroxxy-lancel-render-1.jpg?1543539307") no-repeat center;
 }
@@ -227,7 +220,6 @@
   width: 100%;
   height: 35vh;
   background-size: cover;
-  background-size: 100%;
   transition: all 2s ease-in;
   background: url("https://sugargamers.com/wp-content/uploads/2021/12/video-game-genras.jpeg") no-repeat center;
 }
@@ -252,7 +244,6 @@
   width: 100%;
   height: 35vh;
   background-size: cover;
-  background-size: 100%;
   transition: all 2s ease-in;
   background: url("https://images.unsplash.com/photo-1532356884227-66d7c0e9e4c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") no-repeat center;
 }
@@ -277,7 +268,6 @@
   width: 100%;
   height: 35vh;
   background-size: cover;
-  background-size: 100%;
   transition: all 2s ease-in;
   background: url("https://gmedia.playstation.com/is/image/SIEPDC/TEST-DO-NOT-USE-VR-SPOTLIGHT?$native--t$") no-repeat center;
 }
@@ -313,12 +303,18 @@
   color: white;
 }
 
+.bgimg {
+  transition: opacity 1s ease;
+}
+.bgimg:hover {
+  opacity: 0.5;
+}
+
 #hallbanner {
   position: relative;
   width: 100%;
   height: 35vh;
   background-size: cover;
-  background-size: 100%;
   transition: all 2s ease-in;
   background: url("https://wallpaperaccess.com/full/3742766.png") no-repeat top;
 }
@@ -11656,7 +11652,9 @@ article {
   font-size: 18px;
 }
 
-h2, .h2 {
+h1, .h1,
+h2,
+.h2 {
   text-align: center;
 }
 
