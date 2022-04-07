@@ -52,21 +52,28 @@
   border-radius: 20px 0px 0px 20px;
 }
 
+hr {
+  height: 4px;
+  margin-left: 15px;
+  margin-bottom: -3px;
+}
+
+.hr-white {
+  background-image: -webkit-linear-gradient(right, #212529, white, rgba(0, 0, 0, 0));
+}
+
 #historybanner {
   position: relative;
   width: 100%;
   height: 35vh;
   background-size: cover;
-  background: url("https://i.pinimg.com/736x/ef/66/59/ef6659c4357e05999ff12814227b6ddd--pac-man-emmental.jpg") no-repeat center;
+  background: url("https://i.pinimg.com/originals/0a/d1/d7/0ad1d7cef24a77e15099915897edb089.gif") no-repeat center;
 }
 #historybanner h1, #historybanner .h1 {
   position: absolute;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  text-shadow: 3px 1px 2px black;
 }
 
 #earlyyearsbanner {
@@ -74,19 +81,37 @@
   width: 100%;
   height: 35vh;
   background-size: cover;
-  background: url("https://images.pond5.com/pong-game-animation-background-090361718_prevstill.jpeg") no-repeat top;
+  background: url("https://images.pond5.com/pong-game-animation-background-090361718_prevstill.jpeg") no-repeat fixed;
+  height: 1000px;
 }
-#earlyyearsbanner h2, #earlyyearsbanner .h2 {
-  position: absolute;
-  top: 70%;
-  left: 50%;
+#earlyyearsbanner article {
+  width: 35vw;
+  height: 80vh;
+  top: 50%;
+  left: 80%;
   transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  text-shadow: 3px 1px 2px black;
+  position: absolute;
+  border-radius: 20px;
+  background: #303136;
+  overflow-y: auto;
+}
+#earlyyearsbanner article::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #303136;
+}
+#earlyyearsbanner article::-webkit-scrollbar {
+  width: 12px;
+  background-color: #303136;
+}
+#earlyyearsbanner article::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #d62929;
 }
 
-#earlyyears, #earlyyearsbanner {
+#earlyyears,
+#earlyyearsbanner {
   font-family: "Press Start 2P", cursive;
   font-size: 15px;
   line-height: 30px;
@@ -97,20 +122,45 @@
   width: 100%;
   height: 35vh;
   background-size: cover;
-  background: url("https://wallpaperaccess.com/full/1094280.jpg") no-repeat center;
+  background: url("https://wallpaperaccess.com/full/1094280.jpg") no-repeat fixed;
+  height: 1000px;
 }
-#arcadebanner h2, #arcadebanner .h2 {
-  position: absolute;
-  top: 50%;
+#arcadebanner article {
+  direction: rtl;
+  width: 70vw;
+  height: 30vh;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  text-shadow: 3px 1px 2px black;
-  font-size: 45px;
+  position: absolute;
+  border-radius: 20px;
+  background: #303136;
+  overflow-y: auto;
+}
+#arcadebanner article h2, #arcadebanner article .h2,
+#arcadebanner article p {
+  direction: ltr;
+}
+#arcadebanner article h2, #arcadebanner article .h2 {
+  font-size: 50px;
+}
+#arcadebanner article::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #303136;
+}
+#arcadebanner article::-webkit-scrollbar {
+  width: 12px;
+  background-color: #303136;
+}
+#arcadebanner article::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #d62929;
 }
 
-#arcade, #arcadebanner {
+#arcade,
+#arcadebanner {
   font-family: "VT323", monospace;
   font-size: 30px;
   line-height: 35px;
@@ -121,20 +171,45 @@
   width: 100%;
   height: 35vh;
   background-size: cover;
-  background: url("https://phaser.io/content/tutorials/retro-highscore-table/highscore.jpg") no-repeat center;
+  background: url("https://phaser.io/content/tutorials/retro-highscore-table/highscore.jpg") no-repeat fixed;
+  height: 1000px;
 }
-#rootsbanner h2, #rootsbanner .h2 {
-  position: absolute;
-  top: 50%;
+#rootsbanner article {
+  direction: rtl;
+  width: 70vw;
+  height: 30vh;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  text-shadow: 3px 1px 2px black;
-  font-size: 45px;
+  position: absolute;
+  border-radius: 20px;
+  background: #303136;
+  overflow-y: auto;
+}
+#rootsbanner article h2, #rootsbanner article .h2,
+#rootsbanner article p {
+  direction: ltr;
+}
+#rootsbanner article h2, #rootsbanner article .h2 {
+  font-size: 40px;
+}
+#rootsbanner article::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #303136;
+}
+#rootsbanner article::-webkit-scrollbar {
+  width: 12px;
+  background-color: #303136;
+}
+#rootsbanner article::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #d62929;
 }
 
-#roots, #rootsbanner {
+#roots,
+#rootsbanner {
   font-family: "VT323", monospace;
   font-size: 30px;
   line-height: 35px;
@@ -145,20 +220,42 @@
   width: 100%;
   height: 35vh;
   background-size: cover;
-  background: url("https://i.guim.co.uk/img/media/8f27bb8fc3226ccaa60899b9f89b31eafd3e533e/0_116_2480_1488/master/2480.jpg?width=1900&quality=85&auto=format&fit=max&s=ce83ee7d0f87fa0f7019cc155ef0c7d9") no-repeat center;
+  background: url("https://i.guim.co.uk/img/media/8f27bb8fc3226ccaa60899b9f89b31eafd3e533e/0_116_2480_1488/master/2480.jpg?width=1900&quality=85&auto=format&fit=max&s=ce83ee7d0f87fa0f7019cc155ef0c7d9") no-repeat fixed;
+  height: 1000px;
 }
-#homebanner h2, #homebanner .h2 {
-  position: absolute;
-  top: 50%;
+#homebanner article {
+  direction: rtl;
+  width: 70vw;
+  height: 30vh;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  text-shadow: 3px 1px 2px black;
-  font-size: 30px;
+  position: absolute;
+  border-radius: 20px;
+  background: #303136;
+  overflow-y: auto;
+}
+#homebanner article h2, #homebanner article .h2,
+#homebanner article p {
+  direction: ltr;
+}
+#homebanner article::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #303136;
+}
+#homebanner article::-webkit-scrollbar {
+  width: 12px;
+  background-color: #303136;
+}
+#homebanner article::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #d62929;
 }
 
-#home, #homebanner {
+#home,
+#homebanner {
   font-family: "Orbitron", sans-serif;
   font-size: 20px;
 }
@@ -168,20 +265,42 @@
   width: 100%;
   height: 35vh;
   background-size: cover;
-  background: url("https://wallpapercave.com/wp/wp10038149.png") no-repeat center;
+  background: url("https://cdnb.artstation.com/p/assets/images/images/014/115/877/large/nathanael-cordenod-01.jpg?1542554121") no-repeat fixed;
+  height: 1000px;
 }
-#personalbanner h2, #personalbanner .h2 {
-  position: absolute;
-  top: 50%;
+#personalbanner article {
+  direction: rtl;
+  width: 70vw;
+  height: 30vh;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  text-shadow: 3px 1px 2px black;
-  font-size: 40px;
+  position: absolute;
+  border-radius: 20px;
+  background: #303136;
+  overflow-y: auto;
+}
+#personalbanner article h2, #personalbanner article .h2,
+#personalbanner article p {
+  direction: ltr;
+}
+#personalbanner article::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #303136;
+}
+#personalbanner article::-webkit-scrollbar {
+  width: 12px;
+  background-color: #303136;
+}
+#personalbanner article::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #d62929;
 }
 
-#personal, #personalbanner {
+#personal,
+#personalbanner {
   font-family: "DotGothic16", sans-serif;
 }
 
@@ -190,20 +309,42 @@
   width: 100%;
   height: 35vh;
   background-size: cover;
-  background: url("https://cdna.artstation.com/p/assets/images/images/014/336/978/large/julia-feroxxy-lancel-render-1.jpg?1543539307") no-repeat center;
+  background: url("https://cdna.artstation.com/p/assets/images/images/014/336/978/large/julia-feroxxy-lancel-render-1.jpg?1543539307") no-repeat fixed;
+  height: 1000px;
 }
-#onlinebanner h2, #onlinebanner .h2 {
-  position: absolute;
-  top: 50%;
+#onlinebanner article {
+  direction: rtl;
+  width: 70vw;
+  height: 30vh;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  text-shadow: 3px 1px 2px black;
-  font-size: 35px;
+  position: absolute;
+  border-radius: 20px;
+  background: #303136;
+  overflow-y: auto;
+}
+#onlinebanner article h2, #onlinebanner article .h2,
+#onlinebanner article p {
+  direction: ltr;
+}
+#onlinebanner article::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #303136;
+}
+#onlinebanner article::-webkit-scrollbar {
+  width: 12px;
+  background-color: #303136;
+}
+#onlinebanner article::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #d62929;
 }
 
-#online, #onlinebanner {
+#online,
+#onlinebanner {
   font-family: "atari";
   font-size: 20px;
 }
@@ -213,20 +354,42 @@
   width: 100%;
   height: 35vh;
   background-size: cover;
-  background: url("https://sugargamers.com/wp-content/uploads/2021/12/video-game-genras.jpeg") no-repeat center;
+  background: url("https://sugargamers.com/wp-content/uploads/2021/12/video-game-genras.jpeg") no-repeat fixed;
+  height: 1000px;
 }
-#modernbanner h2, #modernbanner .h2 {
-  position: absolute;
-  top: 50%;
+#modernbanner article {
+  direction: rtl;
+  width: 70vw;
+  height: 30vh;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  text-shadow: 3px 1px 2px black;
-  font-size: 50px;
+  position: absolute;
+  border-radius: 20px;
+  background: #303136;
+  overflow-y: auto;
+}
+#modernbanner article h2, #modernbanner article .h2,
+#modernbanner article p {
+  direction: ltr;
+}
+#modernbanner article::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #303136;
+}
+#modernbanner article::-webkit-scrollbar {
+  width: 12px;
+  background-color: #303136;
+}
+#modernbanner article::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #d62929;
 }
 
-#modern, #modernbanner {
+#modern,
+#modernbanner {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
@@ -236,20 +399,42 @@
   width: 100%;
   height: 35vh;
   background-size: cover;
-  background: url("https://images.unsplash.com/photo-1532356884227-66d7c0e9e4c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") no-repeat center;
+  background: url("https://images.unsplash.com/photo-1476905778601-2e68ba72d354?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2091&q=80") no-repeat fixed;
+  height: 1000px;
 }
-#mobilebanner h2, #mobilebanner .h2 {
-  position: absolute;
-  top: 50%;
+#mobilebanner article {
+  direction: rtl;
+  width: 70vw;
+  height: 30vh;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  text-shadow: 3px 1px 2px black;
-  font-size: 50px;
+  position: absolute;
+  border-radius: 20px;
+  background: #303136;
+  overflow-y: auto;
+}
+#mobilebanner article h2, #mobilebanner article .h2,
+#mobilebanner article p {
+  direction: ltr;
+}
+#mobilebanner article::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #303136;
+}
+#mobilebanner article::-webkit-scrollbar {
+  width: 12px;
+  background-color: #303136;
+}
+#mobilebanner article::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #d62929;
 }
 
-#mobile, #mobilebanner {
+#mobile,
+#mobilebanner {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
@@ -259,20 +444,42 @@
   width: 100%;
   height: 35vh;
   background-size: cover;
-  background: url("https://gmedia.playstation.com/is/image/SIEPDC/TEST-DO-NOT-USE-VR-SPOTLIGHT?$native--t$") no-repeat center;
+  background: url("https://gmedia.playstation.com/is/image/SIEPDC/TEST-DO-NOT-USE-VR-SPOTLIGHT?$native--t$") no-repeat fixed;
+  height: 1000px;
 }
-#futurebanner h2, #futurebanner .h2 {
-  position: absolute;
-  top: 50%;
+#futurebanner article {
+  direction: rtl;
+  width: 70vw;
+  height: 30vh;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  text-shadow: 3px 1px 2px black;
-  font-size: 50px;
+  position: absolute;
+  border-radius: 20px;
+  background: #303136;
+  overflow-y: auto;
+}
+#futurebanner article h2, #futurebanner article .h2,
+#futurebanner article p {
+  direction: ltr;
+}
+#futurebanner article::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #303136;
+}
+#futurebanner article::-webkit-scrollbar {
+  width: 12px;
+  background-color: #303136;
+}
+#futurebanner article::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #d62929;
 }
 
-#future, #futurebanner {
+#future,
+#futurebanner {
   font-family: "future";
   font-size: 25px;
 }
@@ -317,9 +524,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  text-shadow: 3px 1px 2px black;
   font-size: 50px;
 }
 
@@ -11637,13 +11841,23 @@ body {
 }
 
 nav {
-  z-index: 2;
+  position: fixed !important;
+  width: 100%;
+  z-index: 1;
 }
 
 article {
-  margin: 15px 0;
+  margin: 1rem 0;
   padding: 3rem;
   font-size: 18px;
+}
+
+#historymain article {
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+}
+#historymain article:hover {
+  opacity: 1;
 }
 
 h1, .h1,
@@ -11657,4 +11871,21 @@ h2,
 }
 #sources li {
   list-style: none;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #303136;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: #303136;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: white;
 }
